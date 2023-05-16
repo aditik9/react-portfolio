@@ -6,26 +6,27 @@ import Tab from 'react-bootstrap/Tab';
 function Work() {
   return (
     <div class="container" id="Experience">
-        <h1 class="section-heading fw-semibold py-4">Experience</h1>
+        <h1 class="section-heading fw-semibold">Experience</h1>
         <Tab.Container id="left-tabs-example" defaultActiveKey="first">
             <Row>
-                <Col sm={4} className='pe-4'>
+                <Col sm={3}>
                 <Nav variant="pills" className="flex-column">
-                    <Nav.Item className='my-2'>
-                        <Nav.Link eventKey="first"><h4 class="CompanyRole m-0">Software Engineer Intern <span class="textHighlight">@OneShield Software</span></h4></Nav.Link>
+                    <Nav.Item>
+                        <Nav.Link eventKey="first"><h5 class="textHighlight">OneShield Software, Goa</h5></Nav.Link>
                     </Nav.Item>
-                    <Nav.Item className='my-2'>
-                        <Nav.Link eventKey="second"><h4 class="CompanyRole m-0">Full Stack Developement Intern <span class="textHighlight">@Imagine Works</span></h4></Nav.Link>
+                    <Nav.Item>
+                        <Nav.Link eventKey="second"><h5 class="textHighlight">Imagine Works, Goa</h5></Nav.Link>
                     </Nav.Item>
-                    <Nav.Item className='my-2'>
-                        <Nav.Link eventKey="third"><h4 class="CompanyRole m-0">Web Development Intern <span class="textHighlight">@Brushflicks</span></h4></Nav.Link>
+                    <Nav.Item>
+                        <Nav.Link eventKey="third"><h5 class="textHighlight">Brushflicks, Goa</h5></Nav.Link>
                     </Nav.Item>
                 </Nav>
                 </Col>
-                <Col sm={8} className='border-start rounded-start'>
+                <Col sm={8} className='px-4'>
                 <Tab.Content>
                     <Tab.Pane eventKey="first">
-                        <div class="container py-2 px-4">
+                        <div class="container px-4">
+                            <h5 class="CompanyRole m-0 fw-bold">Software Engineer Intern <span class="textHighlight">@OneShield Software, Goa</span></h5>
                             <div id="OSInternDetails">
                                 <div class="details text-white-50">
                                     <p class="Location m-0">Goa, India</p>
@@ -60,7 +61,8 @@ function Work() {
                         </div>
                     </Tab.Pane>
                     <Tab.Pane eventKey="second">
-                        <div class="container py-2 px-4">
+                        <div class="container px-4">
+                            <h5 class="CompanyRole m-0 fw-bold">Full Stack Developement Intern <span class="textHighlight">@Imagine Works</span></h5> 
                             <div id="IWInternDetails">
                                 <div class="details text-white-50">
                                     <p class="Location m-0">Goa, India</p>
@@ -87,7 +89,8 @@ function Work() {
                         </div>
                     </Tab.Pane>
                     <Tab.Pane eventKey="third">
-                        <div class="container py-2 px-4">
+                        <div class="container px-4">
+                            <h5 class="CompanyRole m-0 fw-bold">Web Development Intern <span class="textHighlight">@Brushflicks</span></h5>
                             <div id="IWInternDetails">
                                 <div class="details text-white-50">
                                     <p class="Location m-0">Goa, India</p>
@@ -114,6 +117,7 @@ function Work() {
                 </Col>
             </Row>
         </Tab.Container>
+        <hr class="hr-1" />
     </div>
   );
 }

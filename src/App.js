@@ -19,6 +19,7 @@ function App() {
       <hr class="hr-1"/>
       <About/>
       <Skills />
+      <ExperienceSection/>
       <Work />
       <Projects/>
       <Events />
