@@ -6,7 +6,7 @@ import Events from './components/Events.js';
 import About from './components/About.js';
 import Projects from './components/Projects.js';
 import Socials from './components/socials.js';
-//import Exp from './components/exp.js';
+import Work from './components/work.js';
 
 function App() {
   return (
@@ -19,7 +19,7 @@ function App() {
       <hr class="hr-1"/>
       <About/>
       <Skills />
-      <ExperienceSection />
+      <Work />
       <Projects/>
       <Events />
       <Socials />
