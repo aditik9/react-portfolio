@@ -8,7 +8,7 @@ function Projects() {
 
   return (
     <div class="container" id="ProjectSection">
-        <h1 class="section-heading fw-semibold py-5">Projects</h1>
+        <h1 class="section-heading fw-semibold">Projects</h1>
         <Tabs
             id="controlled-tab-example"
             activeKey={key}
@@ -36,7 +36,7 @@ function Projects() {
             
             </Tab>
         </Tabs>
-        <hr class="hr-1"/>
+        <hr class="hr-1" id="events"/>
     </div>
   );
 }

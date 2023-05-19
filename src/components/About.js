@@ -3,7 +3,7 @@ import pfp from '../pfp.png';
 function About(){
     return(
         <div class="container" id="AboutMe">
-            <h1 class="section-heading fw-semibold">About Me</h1>
+            <h1 class="section-heading fw-semibold pb-4">About Me</h1>
             <div class="about-section row row-cols-auto">
                 <div class="col w-50">
                     <p>Hi! I'm Aditi Kalangutkar, a Student, Frontend Developer 
@@ -12,7 +12,7 @@ function About(){
                     </p>
                     <p>
                         Starting with HTML, 
-                        CSS, and JavaScript, I now work with frameworks like React and Vue.js, 
+                        CSS, and JavaScript, I now work with frameworks like React.js, Vue.js, 
                         incorporating UI/UX concepts and graphic design to create dynamic 
                         and visually appealing web content. 
                     </p>
@@ -27,7 +27,7 @@ function About(){
                     <img src={pfp} alt="pfp" class="w-50 mx-5" />
                 </div>
             </div>
-            <hr class="hr-1"/>
+            <hr class="hr-1" id="skills"/>
         </div>
     );
 };

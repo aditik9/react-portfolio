@@ -11,7 +11,7 @@ function Work() {
             <Row>
                 <Col sm={3}>
                 <Nav variant="pills" className="flex-column">
-                    <Nav.Item>
+                    <Nav.Item class="expbutton">
                         <Nav.Link eventKey="first"><h5 class="textHighlight">OneShield Software, Goa</h5></Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
@@ -34,8 +34,7 @@ function Work() {
                                 </div>
                                 <div class="description mx-auto px-2">
                                     <ul>
-                                        <li>Worked on Automation Scripting Project for testing in the 
-                                            OneShield Market Solutions(OMS) Application.
+                                        <li>Worked on Automation Scripting Project for testing in the OMS Application.
                                         </li>
                                         <li>Got trained for Manual Testing and Automation testing using 
                                             Cucumber BDD with Java - Selenium Framework.
@@ -117,7 +116,8 @@ function Work() {
                 </Col>
             </Row>
         </Tab.Container>
-        <hr class="hr-1" />
+        <hr class="hr-1" id="projects"/>
+        
     </div>
   );
 }
