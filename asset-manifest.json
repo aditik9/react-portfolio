@@ -1,22 +1,25 @@
 {
   "files": {
-    "main.css": "/react-portfolio/static/css/main.bf99f689.css",
-    "main.js": "/react-portfolio/static/js/main.e253024c.js",
+    "main.css": "/react-portfolio/static/css/main.8741fb5e.css",
+    "main.js": "/react-portfolio/static/js/main.f54d5474.js",
     "static/js/787.fb771931.chunk.js": "/react-portfolio/static/js/787.fb771931.chunk.js",
-    "static/media/hero-big.png": "/react-portfolio/static/media/hero-big.43d90eb4c4787d20eef1.png",
+    "static/media/hero2-big.png": "/react-portfolio/static/media/hero2-big.a68b8614f85f25c96e42.png",
+    "static/media/hero1-big.png": "/react-portfolio/static/media/hero1-big.deba604c26787f9c1bbf.png",
+    "static/media/hero-med.png": "/react-portfolio/static/media/hero-med.91f66c78a8bf97d90d32.png",
     "static/media/pfp.png": "/react-portfolio/static/media/pfp.826363b286f4592a068c.png",
+    "static/media/gdg-iwd2023.png": "/react-portfolio/static/media/gdg-iwd2023.7daec28eeca115a19c75.png",
     "static/media/uiux-meter.png": "/react-portfolio/static/media/uiux-meter.d161b7a874f6e046d1c1.png",
     "static/media/web-dev-meter.png": "/react-portfolio/static/media/web-dev-meter.8fcf83db0ff39b9e9500.png",
     "static/media/logo-des-meter.png": "/react-portfolio/static/media/logo-des-meter.7a72a8c93357f152b2b9.png",
     "static/media/graphic-des-meter.png": "/react-portfolio/static/media/graphic-des-meter.7c9b110095333732fe2c.png",
     "static/media/testing-meter.png": "/react-portfolio/static/media/testing-meter.5969f4f06814292e8d71.png",
     "index.html": "/react-portfolio/index.html",
-    "main.bf99f689.css.map": "/react-portfolio/static/css/main.bf99f689.css.map",
-    "main.e253024c.js.map": "/react-portfolio/static/js/main.e253024c.js.map",
+    "main.8741fb5e.css.map": "/react-portfolio/static/css/main.8741fb5e.css.map",
+    "main.f54d5474.js.map": "/react-portfolio/static/js/main.f54d5474.js.map",
     "787.fb771931.chunk.js.map": "/react-portfolio/static/js/787.fb771931.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.bf99f689.css",
-    "static/js/main.e253024c.js"
+    "static/css/main.8741fb5e.css",
+    "static/js/main.f54d5474.js"
   ]
 }
