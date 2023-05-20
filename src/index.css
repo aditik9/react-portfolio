@@ -4,7 +4,6 @@ html{
 
 body {
   margin: 0;
-
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -47,11 +46,18 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-.hero-content,h1{
+/*
+h1{
+  background: -webkit-linear-gradient(#256D85,#00ADB5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color:transparent;
+}
+*/
+
+.tagline{
   color: #256D85;
 }
-
-.bigName, .textHighlight{
+.bigName, .textHighlight, h1, h2{
   color: #00ADB5;
 }
 
@@ -83,12 +89,6 @@ code {
   touch-action: manipulation;
 }
 
-.readmore{
-  background-color:rgba(37,109,133,0.9);
-  color: white;
-  border: #00ADB5;
-}
-
 .expButtons{
   background-color: rgba(37,109,133,0.14);
   border-radius: 8px;
@@ -116,27 +116,6 @@ hr.hr-1 {
   padding-bottom: 3%;
 }
 
-/*
-.cards{
-  background-color:#192430;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6);
-  border: 0;
-  border-radius: 5%;
-  margin: 3.5%;
-  padding-top: 3%;
-  padding-bottom: 15%;
-  height: 300px;
-}
-
-.card-1{
-  color: white;
-  background-image: url('./assets/img/gdg-iwd2023.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: bottom;
-}
-*/
-
 .nav{
   opacity: 0.9; 
 }
@@ -154,12 +133,11 @@ hr.hr-1 {
 
 .social-menu ul{
   position: fixed;
-  top: 75%;
+  top: 77%;
   left: 95%;
   padding: 0;
   margin: 0;
   transform: translate(-50%, -50%);
-
 }
 
 .social-menu ul li, .email a{
@@ -167,11 +145,31 @@ hr.hr-1 {
   margin: 0 15px;
 }
 
-.email{
-  position: fixed;
-  color: #00ADB5;
+.email a,
+.sociallinks a{
   text-decoration: none;
-  transform: rotate(90deg);
+  color: #00ADB5;;
+}
+
+.card-title{
+  text-decoration: none;
+  color: #00ADB5;
+  padding: 1% 0;
+}
+
+.sociallinks a:hover,
+.email a:hover{
+  color: white;
+}
+
+.footer{
+  color: #b9b9b9;
+  margin: 0%;
+
+}
+.page-footer{
+  position: absolute;
+  top: 100%;
 }
 
 .social-menu ul li .fab{
@@ -183,6 +181,11 @@ hr.hr-1 {
 
 .social-menu ul li .fab:hover{
   color: #fff;
+}
+
+.hero-content{
+ padding-top: 5%;
+ margin-top: 5%;
 }
 
 .social-menu ul li a{
@@ -214,84 +217,50 @@ hr.hr-1 {
   background-color: #1D9BF0;
 }
 
-@media screen and (min-width: 992px) {
-  #root{
-    background: url("./assets/img/hero1-big.png") no-repeat center center;
-    background-size: contain;
-    background-position: top;
-    opacity: 0.9;
-  }
+.aboutdesc, .aboutpic{
+  width: 50%;
+  display: block;
 }
 
-@media screen and (min-width: 769px) {
-  #root{
-    background: url("./assets/img/hero2-big.png") no-repeat center center;
-    background-size: contain;
-    background-position: top;
-    opacity: 0.9;
-  }
+.pfp{
+  padding: 0 10%;
+  width: 70%;
 }
 
-
-@media only screen and (max-width: 768px) {
-  #root{
-    background: url("./assets/img/hero-med.png") no-repeat center center;
-    background-size: contain;
-    background-position: top;
-    opacity: 0.9;
-  }
+.skill-container{
+  width: 75%;
+  margin: auto;
+  padding: 0%;
 }
 
-@media only screen and (max-width: 480px) {
-  #root{
-    background: url("./assets/img/hero1-big.png") no-repeat center center;
-    background-size: cover;
-    background-position: top;
-    opacity: 0.9;
-  }
-
-  .about-section{
-    flex-direction: column-reverse;
-    justify-self: center;
-  }
-
-  .social-menu ul{
-    top: 80%;
-    left: 90%;
-  }
+.skillmeter{
+  display: block;
+  padding-bottom: 5%;
 }
 
+.skillmeter img,h6{
+  width: 50%;
+  margin: auto;
+  text-align: center;
+}
 
 #card1{
   background-image: url('./assets/img/gdg-iwd2023.png');
   background-repeat: no-repeat;
   background-size:inherit;
 }
+#card2{
+  background-image: url('./assets/img/reactjs.jpg');
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+#card3{
+  background-image: url('./assets/img/frame3.jpg');
+  background-repeat: no-repeat;
+  background-size:cover;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.containers {
+.containers{
 	position: relative;
 	z-index: 1;
 	display: flex;
@@ -301,7 +270,21 @@ hr.hr-1 {
 	margin: 0 0 40px 0;
 }
 
-.containers .card {
+.card-body{
+  padding: 4%;
+}
+
+.proj-link{
+  color: white;
+  padding: 3% 5%;
+  border-radius: 50px;
+  position: absolute;
+  top: 73%;
+  left: 75%;
+}
+
+
+.containers .card,.cards{
   color: white;
 	position: relative;
 	width: 300px;
@@ -312,11 +295,10 @@ hr.hr-1 {
 	border-radius: 15px;
 	display: flex;
 	justify-content: center;
-	align-items: center;
 	backdrop-filter: blur(40px);
 }
 
-.containers .card .content {
+.containers .card .content{
 	position: relative;
 	display: flex;
 	justify-content: center;
@@ -335,34 +317,6 @@ hr.hr-1 {
 	height: 100%;
 	overflow: hidden;
 }
-
-/*
-.containers .card .content .imgBx img {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-}
-
-.containers .card .content .contentBx h3 {
-	color: #fff;
-	text-transform: uppercase;
-	letter-spacing: 2px;
-	font-weight: 500;
-	font-size: 18px;
-	text-align: center;
-	margin: 20px 0 10px;
-	line-height: 1.1em;
-}
-
-.containers .card .content .contentBx h3 span {
-	font-size: 12px;
-	font-weight: 300;
-	text-transform: initial;
-}
-*/
 .containers .card .sci {
 	position: absolute;
 	bottom: 50px;
@@ -382,3 +336,201 @@ hr.hr-1 {
 }
 
 
+.cards {
+  background: rgba(255, 255, 255, 0.05);
+	box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+  width: 300px;
+	height: 250px;
+}
+
+
+/*RESPONSIVE*/
+@media screen and (min-width: 992px) {
+  #root{
+    background: url("./assets/img/hero1-big.png") no-repeat center center;
+    background-size: contain;
+    background-position: top;
+    opacity: 0.9;
+  }
+  .cards {
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+    width: 280px;
+    height: 220px;
+  }
+  .card-body{
+    padding: 2%;
+  }
+  .card-title{
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  #root{
+    background: url("./assets/img/hero2-big.png") no-repeat center center;
+    background-size: contain;
+    background-position: top;
+    opacity: 0.9;
+  }
+  /*.ExpDesc{
+    padding: 3% 0;
+    border: 0;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.05);
+  } */
+  .cards {
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+    width: 280px;
+    height: 220px;
+  }
+  .card-body{
+    padding: 2%;
+  }
+  .card-title{
+    padding: 0;
+  }
+}
+
+/* tablets*/
+@media only screen and (max-width: 768px) {
+  #root{
+    background: url("./assets/img/hero-med.png") no-repeat center center;
+    background-size: contain;
+    background-position: top;
+    opacity: 0.9;
+  }
+  .about-section{
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .aboutdesc, .aboutpic{
+    flex-direction: row;
+    width: 85%;
+    text-align: center;
+  }
+  .pfp{
+    margin-bottom: 5%;
+    width: 50%;
+    display: block;
+    padding: 3% 0% ;
+  }
+
+  .social-menu ul{
+    top: 85%;
+    left: 95%;
+  }
+  .section-heading{
+    padding: 0;
+    padding-bottom: 5%;
+    text-align: center;
+    
+  }
+
+  .hero-content{
+    padding-top: 15%;
+    margin-top: 15%;
+   }
+
+  hr.hr-1 {
+    height: 2px;
+    margin: 20% 0%;
+  }
+  .ExpDesc{
+    padding: 3% 0;
+    border: 0;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.05);
+  }
+
+  .cards {
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+    width: 250px;
+    height: 220px;
+  }
+  .card-body{
+    padding: 2%;
+  }
+  .card-title{
+    padding: 0;
+  }
+}
+
+/*mobile phone*/
+@media only screen and (max-width: 480px) {
+  #root{
+    background: url("./assets/img/hero1-big.png") no-repeat center center;
+    background-size: cover;
+    background-position: top;
+    opacity: 0.9;
+  }
+
+  .about-section{
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .aboutdesc, .aboutpic{
+    flex-direction: row;
+    width: 85%;
+    text-align: center;
+  }
+  .pfp{
+    margin-bottom: 5%;
+    width: 50%;
+    display: block;
+    padding: 5% 0% ;
+  }
+
+  .social-menu ul{
+    top: 80%;
+    left: 90%;
+  }
+  .section-heading{
+    padding: 0;
+    padding-bottom: 3%;
+    text-align: center;
+  }
+
+  .hero-content{
+    padding-top: 25%;
+    margin-top: 25%;
+   }
+  
+  hr.hr-1 {
+    height: 2px;
+    margin: 30% 0%;
+  }
+  .ExpDesc{
+    padding: 10% 0;
+    margin-top: 10%;
+    border: 0;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.05);
+  }
+
+  .proj-container{
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 0 40px 0;
+  }
+  .cards {
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+    width: 250px;
+    height: 210px;
+  }
+  .card-body{
+    padding: 2%;
+  }
+  .card-title{
+    padding: 0;
+  }
+}

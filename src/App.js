@@ -17,7 +17,6 @@ function App() {
         <Hero />
       </header>
       <br />
-      <hr class="hr-1"/>
       <About/>
       <Skills />
       <Work />

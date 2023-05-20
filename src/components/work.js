@@ -5,13 +5,13 @@ import Tab from 'react-bootstrap/Tab';
 
 function Work() {
   return (
-    <div class="container" id="Experience">
+    <div class="container work" id="Experience">
         <h1 class="section-heading fw-semibold">Experience</h1>
         <Tab.Container id="left-tabs-example" defaultActiveKey="first">
             <Row>
                 <Col sm={3}>
-                <Nav variant="pills" className="flex-column">
-                    <Nav.Item class="expbutton">
+                <Nav variant="pills" className="expbutton flex-column">
+                    <Nav.Item>
                         <Nav.Link eventKey="first"><h5 class="textHighlight">OneShield Software, Goa</h5></Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
@@ -24,7 +24,7 @@ function Work() {
                 </Col>
                 <Col sm={8} className='px-4'>
                 <Tab.Content>
-                    <Tab.Pane eventKey="first">
+                    <Tab.Pane className='ExpDesc' eventKey="first">
                         <div class="container px-4">
                             <h5 class="CompanyRole m-0 fw-bold">Software Engineer Intern <span class="textHighlight">@OneShield Software, Goa</span></h5>
                             <div id="OSInternDetails">
@@ -59,7 +59,7 @@ function Work() {
                             </div>
                         </div>
                     </Tab.Pane>
-                    <Tab.Pane eventKey="second">
+                    <Tab.Pane className='ExpDesc' eventKey="second">
                         <div class="container px-4">
                             <h5 class="CompanyRole m-0 fw-bold">Full Stack Developement Intern <span class="textHighlight">@Imagine Works</span></h5> 
                             <div id="IWInternDetails">
@@ -87,7 +87,7 @@ function Work() {
                             </div>
                         </div>
                     </Tab.Pane>
-                    <Tab.Pane eventKey="third">
+                    <Tab.Pane className='ExpDesc' eventKey="third">
                         <div class="container px-4">
                             <h5 class="CompanyRole m-0 fw-bold">Web Development Intern <span class="textHighlight">@Brushflicks</span></h5>
                             <div id="IWInternDetails">
@@ -117,7 +117,6 @@ function Work() {
             </Row>
         </Tab.Container>
         <hr class="hr-1" id="projects"/>
-        
     </div>
   );
 }

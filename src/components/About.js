@@ -3,9 +3,9 @@ import pfp from '../pfp.png';
 function About(){
     return(
         <div class="container" id="AboutMe">
-            <h1 class="section-heading fw-semibold pb-4">About Me</h1>
+            <h1 class="section-heading fw-semibold">About Me</h1>
             <div class="about-section row row-cols-auto">
-                <div class="col w-50">
+                <div class="aboutdesc col">
                     <p>Hi! I'm Aditi Kalangutkar, a Student, Frontend Developer 
                         and a self made artist. As a student and frontend developer  
                         I'm passionate about creativity and design.
@@ -23,8 +23,8 @@ function About(){
                         my skills as a developer and designer. 
                     </p>
                 </div>
-                <div class="col w-50">
-                    <img src={pfp} alt="pfp" class="w-50 mx-5" />
+                <div class="aboutpic col">
+                    <img src={pfp} alt="pfp" class="pfp mx-auto"/>
                 </div>
             </div>
             <hr class="hr-1" id="skills"/>

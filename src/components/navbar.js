@@ -1,31 +1,3 @@
-/*function Navbar(){
-    return(
-        <div class="navigation-bar">
-            <nav id="navigation" class="navbar fixed-top navbar-expand-xl navbar-dark py-3 px-5" style={{backgroundColor: '#0E141B'}}>
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item pe-3">
-                        <a class="nav-link" href="#home">Home</a>
-                    </li>
-                    <li class="nav-item pe-3">
-                        <a class="nav-link" href="#skills">Skills</a>
-                    </li>
-                    <li class="nav-item pe-3">
-                        <a class="nav-link" href="#experience">Experience</a>
-                    </li>
-                    <li class="nav-item pe-3">
-                        <a class="nav-link" href="#projects">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <button class="btn btn-outline-light" type="submit">Resume</button>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    );
-}
-
-export default Navbar
-*/
 import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
@@ -36,7 +8,7 @@ import Offcanvas from 'react-bootstrap/Offcanvas';
 function NavBar() {
   return (
     <div class="nav">
-      {['xl'].map((expand) => (
+      {['sm'].map((expand) => (
         <Navbar key={expand} expand={expand} className="navbar fixed-top navbar-expand-xl navbar-dark py-3 mb-3" style={{backgroundColor: '#0E141B'}}>
           <Container fluid>
             <Navbar.Brand href="#"></Navbar.Brand>
@@ -53,6 +25,7 @@ function NavBar() {
               <Offcanvas.Body >
                 <Nav className="justify-content-end flex-grow-1 pe-3">
                   <Nav.Link href="#home">Home</Nav.Link>
+                  <Nav.Link href="#about">About</Nav.Link>
                   <Nav.Link href="#skills">Skills</Nav.Link>
                   <Nav.Link href="#experience">Experience</Nav.Link>
                   <Nav.Link href="#projects">Projects</Nav.Link>
