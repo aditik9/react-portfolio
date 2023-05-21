@@ -88,7 +88,7 @@ h1{
   -webkit-user-select: none;
   touch-action: manipulation;
 }
-
+/*
 .expButtons{
   background-color: rgba(37,109,133,0.14);
   border-radius: 8px;
@@ -97,6 +97,7 @@ h1{
   text-align: left;
   padding: 1% 2%;
 }
+*/
 
 #osintern{
   display: none;
@@ -238,11 +239,18 @@ hr.hr-1 {
   padding-bottom: 5%;
 }
 
-.skillmeter img,h6{
+.skillmeter img{
   width: 50%;
-  margin: auto;
-  text-align: center;
+  margin: 5% auto;
 }
+
+.skill-title{
+  text-align: center;
+  align-items: center;
+  height: 40px;
+}
+
+
 
 #card1{
   background-image: url('./assets/img/gdg-iwd2023.png');
@@ -334,8 +342,6 @@ hr.hr-1 {
 	opacity: 1;
   font-size: 16px;
 }
-
-
 .cards {
   background: rgba(255, 255, 255, 0.05);
 	box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
@@ -355,7 +361,7 @@ hr.hr-1 {
   .cards {
     background: rgba(255, 255, 255, 0.05);
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
-    width: 280px;
+    width: 300px;
     height: 220px;
   }
   .card-body{
@@ -373,12 +379,6 @@ hr.hr-1 {
     background-position: top;
     opacity: 0.9;
   }
-  /*.ExpDesc{
-    padding: 3% 0;
-    border: 0;
-    border-radius: 10px;
-    background-color: rgba(255, 255, 255, 0.05);
-  } */
   .cards {
     background: rgba(255, 255, 255, 0.05);
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
@@ -426,7 +426,6 @@ hr.hr-1 {
     padding: 0;
     padding-bottom: 5%;
     text-align: center;
-    
   }
 
   .hero-content{
@@ -444,11 +443,10 @@ hr.hr-1 {
     border-radius: 10px;
     background-color: rgba(255, 255, 255, 0.05);
   }
-
   .cards {
     background: rgba(255, 255, 255, 0.05);
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
-    width: 250px;
+    width: 280px;
     height: 220px;
   }
   .card-body{
@@ -524,13 +522,15 @@ hr.hr-1 {
   .cards {
     background: rgba(255, 255, 255, 0.05);
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
-    width: 250px;
-    height: 210px;
+    width: 290px;
+    height: 200px;
   }
   .card-body{
-    padding: 2%;
+    padding: 5%;
   }
-  .card-title{
-    padding: 0;
+  .proj-link{
+    border-radius: 60px;
+    top: 72%;
+    left: 80%;
   }
 }

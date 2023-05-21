@@ -3,6 +3,7 @@ import Nav from 'react-bootstrap/Nav';
 import Row from 'react-bootstrap/Row';
 import Tab from 'react-bootstrap/Tab';
 
+
 function Work() {
   return (
     <div class="container work" id="Experience">
@@ -10,17 +11,17 @@ function Work() {
         <Tab.Container id="left-tabs-example" defaultActiveKey="first">
             <Row>
                 <Col sm={3}>
-                <Nav variant="pills" className="expbutton flex-column">
-                    <Nav.Item>
-                        <Nav.Link eventKey="first"><h5 class="textHighlight">OneShield Software, Goa</h5></Nav.Link>
-                    </Nav.Item>
-                    <Nav.Item>
-                        <Nav.Link eventKey="second"><h5 class="textHighlight">Imagine Works, Goa</h5></Nav.Link>
-                    </Nav.Item>
-                    <Nav.Item>
-                        <Nav.Link eventKey="third"><h5 class="textHighlight">Brushflicks, Goa</h5></Nav.Link>
-                    </Nav.Item>
-                </Nav>
+                    <Nav variant="pills" className="flex-column">
+                        <Nav.Item className='CompanyButton' >
+                            <Nav.Link eventKey="first"><h5 class="textHighlight">OneShield Software, Goa</h5></Nav.Link>
+                        </Nav.Item>
+                        <Nav.Item>
+                            <Nav.Link eventKey="second"><h5 class="textHighlight">Imagine Works, Goa</h5></Nav.Link>
+                        </Nav.Item>
+                        <Nav.Item>
+                            <Nav.Link eventKey="third"><h5 class="textHighlight">Brushflicks, Goa</h5></Nav.Link>
+                        </Nav.Item>
+                    </Nav>
                 </Col>
                 <Col sm={8} className='px-4'>
                 <Tab.Content>
